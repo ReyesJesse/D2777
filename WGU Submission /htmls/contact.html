@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/mainSection.css" />
+    <link rel="stylesheet" href="/secondSection.css" />
+    <link rel="stylesheet" href="/thirdSection.css" />
+    <link rel="stylesheet" href="/illinoisPage/illinoisPage.css">
+    <link rel="stylesheet" href="/contactPage/contactPage.css">
+
+    <title>Illinois Facts</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">Welcome <br />to Illinois</div>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/htmls/illinoisPage.html">Did you know?</a></li>
+        <li><a href="/htmls/contact.html">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </nav>
+
+    <!-- Contact Form Section -->
+    <section class="contact-section">
+      <div class="contact-container">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+          <!-- First Name -->
+          <div class="form-group">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required>
+          </div>
+
+          <!-- Last Name -->
+          <div class="form-group">
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required>
+          </div>
+
+          <!-- Email Address -->
+          <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <!-- Confirm Email -->
+          <div class="form-group">
+            <label for="confirm-email">Confirm Email Address:</label>
+            <input type="email" id="confirm-email" name="confirm-email" required>
+          </div>
+
+          <!-- Question -->
+          <div class="form-group">
+            <label for="question">Your Question:</label>
+            <textarea id="question" name="question" rows="4" required></textarea>
+          </div>
+
+          <!-- Submit Button -->
+          <input type="submit" value="Submit">
+        </form>
+
+        <!-- Custom Success Message -->
+        <div id="success-message" class="message" style="display: none;">
+          Thank you for your submission, we will get back to you shortly with your answer!
+        </div>
+
+      </div>
+    </section>
+   
+    <!-- Third Section for Cities -->
+    <div class="second-section">
+      <h2 class="section-title">More Illinois Cities to Visit</h2>
+      <div class="cards-container">
+        <div class="card">
+          <a href="/htmls/chicago.html">
+            <img src="/images/chicagoCard.webp" alt="Chicago" class="card-image">
+            <h3 class="card-title">Chicago</h3>
+          </a>
+        </div>
+        <div class="card">
+          <a href="/htmls/urbana.html">
+            <img src="/images/champaign.webp" alt="Urbana" class="card-image">
+            <h3 class="card-title">Urbana-Champaign</h3>
+          </a>
+        </div>
+        <div class="card">
+          <a href="/htmls/peoria.html">
+            <img src="/images/peoria.webp" alt="Peoria" class="card-image">
+            <h3 class="card-title">Peoria</h3>
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Third Section for Map -->
+    <section class="third-section">
+      <h1 class="section-title">You can Find us here</h1>
+      <div class="map-container">
+        <a href="https://www.google.com/maps?q=Illinois" target="_blank" class="map-link">
+          <img src="/images/map.png" alt="Illinois Map" class="map-image">
+        </a>
+      </div>
+      <a href="https://www.google.com/maps?q=Illinois" target="_blank" class="cta-button">
+        Open in Google Maps
+      </a>
+    </section>
+
+    <footer class="footer">
+      <p>Made by Jesse Reyes, for WGU © 2024</p>
+      <a href="your-sources-link.html" class="sources-link">
+        Click here for a list of sources for materials used on this site.
+      </a>
+    </footer>
+
+    <script src="/javascript.js"></script>
+  </body>
+</html>

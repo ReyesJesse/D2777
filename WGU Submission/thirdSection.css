@@ -1,0 +1,97 @@
+/* Third Section Styles */
+.third-section {
+    padding: 60px 30px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.80);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    font-family: Arial, sans-serif;
+}
+
+.third-section .section-title {
+    font-size: 2rem;
+    font-weight: 100;
+    color: white;
+    margin-bottom: 20px; /* Space between the title and the map */
+}
+
+.third-section .map-container {
+    position: relative;
+    width: 100%;
+    max-width: 500px; /* Adjust the maximum width to make the map smaller */
+    margin: 0 auto; /* Center the map */
+}
+
+.third-section .map-link {
+    display: block; /* Make the entire area clickable */
+}
+
+.third-section .map-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Rounded corners for the map image */
+    cursor: pointer; /* Change the cursor to indicate it's clickable */
+    transition: transform 0.3s ease; /* Add zoom effect */
+}
+
+.third-section .map-image:hover {
+    transform: scale(1.05); /* Zoom in slightly when hovered */
+}
+
+/* Button Style */
+.third-section .cta-button {
+    display: inline-block;
+    padding: 12px 30px;
+    margin-top: 20px; /* Space between the map and the button */
+    background-color: #444;
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.third-section .cta-button:hover {
+    background-color: #222; /* Darken the button on hover */
+    transform: scale(1.05); /* Slight zoom effect when hovering */
+}
+/* Footer Styles */
+.footer {
+    display: flex; /* Display items in a row */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Align items vertically */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.80);
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 1rem; /* Adjust the font size */
+}
+
+.footer p {
+    margin-right: 10px; /* Space between the text and the link */
+}
+
+.sources-link {
+    color: white;
+    text-decoration: underline; /* Underline the link */
+    transition: color 0.3s ease; /* Smooth color change */
+}
+
+.sources-link:hover {
+    color: #00bcd4; /* Change color when hovered */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .third-section .map-container {
+        max-width: 100%;
+    }
+
+    .third-section .map-image {
+        height: auto; /* Ensure the height stays proportional on smaller screens */
+    }
+
+    .third-section .cta-button {
+        padding: 15px 40px; /* Make the button larger on mobile */
+    }
+}

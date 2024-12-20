@@ -1,0 +1,155 @@
+/* Section Styling */
+.city-info-section {
+    padding: 60px 30px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.80);
+    border-radius: 12px;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.city-info-section .section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Table Styling */
+.table-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px; /* Adds spacing between the table and the flag */
+    margin-bottom: 40px;
+}
+
+.city-info-table {
+    width: 60%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    color: #333;
+    border-radius: 8px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.city-info-table:hover {
+    transform: scale(1.02); /* Slight zoom on hover */
+}
+
+.city-info-table th, .city-info-table td {
+    padding: 18px 25px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.city-info-table th {
+    background-color: #444;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.city-info-table td {
+    background-color: #f9f9f9;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Illinois Flag Styling */
+.illinois-flag {
+    width: 35%;
+    text-align: center;
+}
+
+.flag-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    border: 4px solid #ffffff; /* Add gold border for styling */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Quick Summary Styling */
+.summary {
+    margin-top: 40px;
+    font-size: 1.1rem;
+    background-color: #222;
+    color: #f7f7f7;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+    line-height: 1.8;
+    transition: transform 0.3s ease-in-out;
+}
+
+.summary:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.summary p {
+    margin: 0;
+}
+
+/* Fun Facts Styling */
+.fun-facts {
+    margin-top: 40px;
+    font-size: 1.1rem;
+    color: white;
+    background-color: #333;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    line-height: 1.8;
+    text-align: left;
+}
+
+.fun-facts h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.fun-facts ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.fun-facts li {
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+}
+
+/* Hover effect for list items */
+.fun-facts li:hover {
+    color: #46b6f7; /* Change color to gold on hover */
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .city-info-table {
+        width: 100%;
+    }
+
+    .illinois-flag {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .summary, .fun-facts {
+        padding: 20px;
+    }
+
+    .fun-facts h3 {
+        font-size: 1.5rem;
+    }
+}

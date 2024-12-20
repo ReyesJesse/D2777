@@ -1,0 +1,108 @@
+    /* Reset styles */
+    body, ul {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        font-family: Arial, sans-serif;
+        background-image: url('images/mainSectionBG.webp'); /* Your background image */
+        background-size: cover; /* Ensure the background covers the entire viewport */
+        background-position: center; /* Center the background image */
+        background-repeat: no-repeat; /* Prevent the image from repeating */
+        background-attachment: fixed; /* Make the background image fixed and not scrollable */
+        z-index: -1; /* Ensures the background is behind the content */
+        border-bottom-right-radius: 50px; /* Add border-radius to the pseudo-element */
+        border-bottom-left-radius: 50px; /* Add border-radius to the pseudo-element */
+    }
+    
+    /* Navigation bar container */
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.80);
+        padding: 40px 20px;
+        border-bottom: 1px solid white;
+
+    }
+
+    @font-face {
+        font-family: logoFont;
+        src: url(font/handwriting-draft_free-version.ttf);
+    }
+    /* Logo */
+    .navbar .logo {
+        font-size: 2rem;
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-family: logoFont;
+    }
+
+    /* Navigation links */
+    .navbar ul {
+        list-style: none;
+        display: flex;
+        gap: 15px;
+        font-size: 1.5rem;
+
+    }
+
+    .navbar ul li {
+        display: inline;
+    }
+
+    .navbar ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 8px 12px;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+    }
+
+    .navbar ul li a:hover {
+        background-color: #444; /* Slightly lighter background on hover */
+    }
+
+    /* Responsive hamburger menu */
+    .hamburger {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+        gap: 4px;
+    }
+
+    .hamburger div {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+    }
+
+    @media (max-width: 768px) {
+        .navbar ul {
+            display: none;
+            flex-direction: column;
+            background-color: #222;
+            position: absolute;
+            top: 60px;
+            right: 20px;
+            width: 150px;
+            border-radius: 4px;
+            padding: 10px 0;
+            z-index: 99;
+        }
+
+        .navbar ul.active {
+            display: flex;
+            z-index: 99;
+            font-size: 15px;
+            top: 7rem;
+
+
+        }
+
+        .hamburger {
+            display: flex;
+        }
+    }
